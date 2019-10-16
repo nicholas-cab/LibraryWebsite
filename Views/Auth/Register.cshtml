@@ -1,0 +1,13 @@
+@{
+    var registrationSuccessful = ViewData["registrationSuccsessful"];
+}
+
+@if(registrationSuccessful) {
+    <div class="alert alertt-primary" role"alert">
+        Thanks for registration!
+        </div>
+}
+
+<h2>Registration page</h2>
+
+<form action="/auth/register"></form>
